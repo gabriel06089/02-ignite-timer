@@ -18,5 +18,21 @@
     "allowImportingTsExtensions": true
   },
   "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "compilerOptions": {
+  "target": "esnext",
+  "module": "esnext",
+  "jsx": "preserve",
+  "sourceMap": true,
+  "moduleResolution": "node",
+  "esModuleInterop": true,
+  "lib": ["dom", "dom.iterable", "esnext"],
+  "baseUrl": ".",
+  "paths": {
+    "@/*": ["src/*"]
+  }
+},
+"exclude": ["node_modules"],
+"include": ["src/**/*.ts", "src/**/*.tsx", "vite-env.d.ts"]
+
 }
