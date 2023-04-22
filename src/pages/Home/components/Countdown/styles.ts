@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const CountdownContianer = styled.div`
+export const CountdownContainer = styled.div`
   font-family: 'Roboto mono', monospace;
   font-size: 10rem;
   line-height: 8rem;
